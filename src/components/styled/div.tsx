@@ -32,7 +32,7 @@ right: -1rem;
 top: 10rem;
 background-color: #A49580;
 width: 10rem;
-height: 3rem;
+height: 4rem;
 border-radius: 1rem; 
 padding: 1rem;
 animation: ${fadeIn} 1s ease-in;

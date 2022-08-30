@@ -8,7 +8,7 @@ export function Home() {
   return (
     <>
       <Welcome>
-        <h1>Välkommen till hemmaodla!</h1>
+        <h1>Välkommen till hemmaodlat!</h1>
 
         <p>
           Här tipsar vi om alla möjliga sätt att odla på. Vad man ska tänka på,
