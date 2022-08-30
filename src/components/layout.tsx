@@ -7,7 +7,6 @@ import { NameDiv, WeatherDiv } from "./styled/div";
 import { useEffect, useState } from "react";
 import { Main } from "./styled/main";
 import { IWeather } from "../interface/Iwaether";
-import { getEnvironmentData } from "worker_threads";
 
 export function Layout() {
   const [latitud, setLatitud] = useState(0);
@@ -35,7 +34,7 @@ export function Layout() {
           setLongitud(long);
           //hämta api med väder. longitud och latitud för att se vädert på den platsen. använd metric systemet
           fetch(
-            "https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&units=metric&appid=6451acafe440344655d98f50d275c7f2"
+             "https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&units=metric&appid=6451acafe440344655d98f50d275c7f2"
           )
             .then((response) => response.json())
             .then((data) => {
