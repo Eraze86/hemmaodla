@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Layout } from './components/layout';
+import { Home } from './components/home';
+import { Contact } from './components/contact';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
+  //react router, så jag komemr till rätt sida när jag klickar
+<React.StrictMode>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+      <Route index element={<Home />}/>
+      <Route path='/contact' element={<Contact />}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
