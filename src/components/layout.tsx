@@ -63,7 +63,7 @@ export function Layout() {
           {datan.name}<br />
           Temperatur: {datan.main.temp} C
           <br />
-          Luftuktighet: {datan.main.humidity} %
+          Luftfuktighet: {datan.main.humidity} %
 
         </WeatherDiv>
         <ImgHeader src={headerImg}></ImgHeader>
